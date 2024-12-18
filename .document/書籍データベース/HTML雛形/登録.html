@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>蔵書データベース</title>
+</head>
+
+<body>
+    <div>
+        <h1>蔵書データベース</h1>
+
+        <div">
+            <p>書名</p>
+            <input type="text">
+    </div>
+    <div>
+        <p>シリーズ</p>
+        <input type="text">
+    </div>
+    <div>
+        <p>著者名</p>
+        <input type="text">
+    </div>
+    </div>
+    <div>
+        <div>
+            <label>
+                <p>出版社</p>
+                <input type="text">
+            </label>    
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <p><lavel>出版年<input type="text"></lavel></p>
+            </div>
+            <div class="flex-item">
+                <p><lavel>出版月<input type="number" max=12 min=1 ></lavel></p>
+            </div>
+        </div>
+        <div>
+            <p>ISBN</p>
+            <input type="text" size=13>
+        </div>
+        <div>
+            <p>判型</p>
+            <input type="text" size=13>
+        </div>
+        <div>
+            <p>購入日</p>
+            <input type="date">
+        </div>
+    </div>
+    <div>
+        <p>現状</p>
+        <select>
+            <option></option>
+            <option>所蔵</option>
+            <option>処分済</option>
+        </select>
+    </div>
+    <div>
+        <p>処分日</p>
+        <input type="date">
+    </div>
+    <div>
+        <p>処分方法</p>
+        <select>
+            <option></option>
+            <option>売却</option>
+            <option>廃棄</option>
+            <option>その他</option>
+        </select>
+    </div>
+    <div>
+        <p>その他</p>
+        <textarea cols="50" rouws="20"></textarea>
+    </div>
+    <button>検索</button>
+
+</body>
+<style>
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-item{
+        flex: 1 1 auto;
+    }
+</style>
+
+</html>
