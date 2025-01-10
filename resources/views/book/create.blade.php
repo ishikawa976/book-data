@@ -9,27 +9,27 @@
                 @csrf
             <div class="bg-white mx-20 my-4">
                 <div class="mx-5 my-5 grid grid-cols-2 gap-5">
-                    <label for="title" class="flex items-center">書名</label>
+                    <label for="title" class="flex items-center">書名（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('title')" class="mt-2" />
                         <input type="text" name="title" class="mt-4 w-full" id="title" value="{{old('title')}}">
                     </div>
-                    <label for="author">著者名</label>
+                    <label for="author">著者名（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('author')" class="mt-2" />
                         <input type="text" name="author" class="w-full" id="author" value="{{old('author')}}">
                     </div>
-                    <label for="publish">出版社</label>
+                    <label for="publish">出版社（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('publish')" class="mt-2" />
                         <input type="text" name="publish" class="w-full" id="publish" value="{{old('publish')}}">
                     </div>
-                    <label for="publish_year">出版年</label>
+                    <label for="publish_year">出版年（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('publish_year')" class="mt-2" />
                         <input type="text" name="publish_year" class="w-full" id="publish_year" value="{{old('publish_year')}}">
                     </div>
-                    <label for="publish_month">出版月</label>
+                    <label for="publish_month">出版月（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('publish_month')" class="mt-2" />
                         <select type="text" name="publish_month" class="w-full" id="publish_month">
@@ -44,7 +44,7 @@
                         <x-input-error :messages="$errors->get('isbn')" class="mt-2" />
                         <input type="text" name="isbn" class="w-full" id="isbn" value="{{old('isbn')}}">
                     </div>
-                    <label for="book_size">判型</label>
+                    <label for="book_size">判型（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('book_size')" class="mt-2" />
                         <select type="text" name="book_size" class="w-full" id="book_size">
@@ -59,7 +59,7 @@
                         <x-input-error :messages="$errors->get('purchase_date')" class="mt-2" />
                         <input type="date" name="purchase_date" class="w-full" id="purchase_date" value="{{old('purchase_date')}}"> 
                     </div>
-                    <label for="status">現状</label>
+                    <label for="status">現状（必須）</label>
                     <div>
                         <x-input-error :messages="$errors->get('status')" class="mt-2" />
                         <select type="text" name="status" class="w-full" id="status">
