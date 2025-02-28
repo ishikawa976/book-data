@@ -51,7 +51,7 @@
                          @if($book->purchase_date !== null)
                         <tr>
                             <td class="border border-slate-700 px-5 py-1">購入日</td>
-                            <td class="border border-slate-700 px-5 py-1">{{$book->purchase_date}}</td>
+                            <td class="border border-slate-700 px-5 py-1">{{date('Y年m月d日',strtotime($book->purchase_date))}}</td>
                         </tr>
                          @endif
                         <tr>
@@ -61,7 +61,7 @@
                         @if($book->status === '処分済')
                             <tr>
                                 <td class="border border-slate-700 px-5 py-1">処分日</td>
-                                <td class="border border-slate-700 px-5 py-1">{{$book->disposal_date}}</td>
+                                <td class="border border-slate-700 px-5 py-1">{{date('Y年m月d日',strtotime($book->disposal_date))}}</td>
                              </tr>
                              <tr>
                                 <td class="border border-slate-700 px-5 py-1">処分方法</td>
